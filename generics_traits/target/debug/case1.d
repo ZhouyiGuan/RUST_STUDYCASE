@@ -1,1 +1,0 @@
-/home/zhouyi/repos/RUST-STUDYCASE/generics_traits/target/debug/case1: /home/zhouyi/repos/RUST-STUDYCASE/generics_traits/src/bin/case1.rs /home/zhouyi/repos/RUST-STUDYCASE/generics_traits/src/lib.rs /home/zhouyi/repos/RUST-STUDYCASE/generics_traits/src/test_mod.rs
