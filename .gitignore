@@ -1,5 +1,5 @@
-generics_traits/target
-generics_traits/cargo.lock
+general/target
+general/cargo.lock
 
 module/target
 module/cargo.lock
