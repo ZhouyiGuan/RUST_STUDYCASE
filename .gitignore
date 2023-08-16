@@ -1,5 +1,0 @@
-general/target
-general/cargo.lock
-
-module/target
-module/cargo.lock
