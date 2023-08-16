@@ -35,6 +35,7 @@ pub async fn reply_string(var: web::Path<String>) -> String {
 /// GET: 0.0.0.0:7878/reqForm/path/11/abc
 /// 
 /// # return
+/// ```json
 /// {
 ///     "info": {
 ///         "A": 11,
@@ -42,6 +43,7 @@ pub async fn reply_string(var: web::Path<String>) -> String {
 ///     },
 ///     "status": "ok"
 /// }
+/// ```
 /// 
 /// # description
 /// 这里可以直接把路径输入解析到一个结构体里
@@ -58,13 +60,15 @@ pub async fn req_in_path(info: web::Path<Info>) -> impl Responder {
 /// 
 /// # RestfulAPI
 /// GET: 0.0.0.0:7878/reqForm/json
-/// 
+/// ```json
 /// {
 ///     "A": 11,
 ///     "B":"abc"
 /// }
+/// ```
 /// 
 /// # return
+/// ```json
 /// {
 ///     "info": {
 ///         "A": 11,
@@ -72,6 +76,7 @@ pub async fn req_in_path(info: web::Path<Info>) -> impl Responder {
 ///     },
 ///     "status": "ok"
 /// }
+/// ```
 /// 
 /// # description
 /// 这里可以直接把json格式输入解析到一个结构体里
@@ -90,6 +95,7 @@ pub async fn req_in_json(info: web::Json<Info>) -> impl Responder {
 /// GET: 0.0.0.0:7878/app/status
 /// 
 /// # return
+/// ```json
 /// {
 ///     "app_status": {
 ///         "app_counter": 4,
@@ -97,6 +103,7 @@ pub async fn req_in_json(info: web::Json<Info>) -> impl Responder {
 ///     },
 ///     "status": "get status success"
 /// }
+/// ```
 /// 
 /// # description
 /// 展示如何在json回复体中加入反序列化结构体
@@ -116,6 +123,7 @@ pub async fn get_appstatus(data:web::Data<AppStatus>) -> impl Responder {
 /// POST: 0.0.0.0:7878/app/status
 /// 
 /// # return
+/// ```json
 /// {
 ///     "app_status": {
 ///         "app_counter": 4,
@@ -123,6 +131,7 @@ pub async fn get_appstatus(data:web::Data<AppStatus>) -> impl Responder {
 ///     },
 ///     "status": "get status success"
 /// }
+/// ```
 /// 
 /// # description
 /// 展示如何修改全局共享app状态；状态的注册是在main函数中；可变的成员需要用mutex

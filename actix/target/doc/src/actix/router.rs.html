@@ -137,6 +137,15 @@
 <a href="#137" id="137">137</a>
 <a href="#138" id="138">138</a>
 <a href="#139" id="139">139</a>
+<a href="#140" id="140">140</a>
+<a href="#141" id="141">141</a>
+<a href="#142" id="142">142</a>
+<a href="#143" id="143">143</a>
+<a href="#144" id="144">144</a>
+<a href="#145" id="145">145</a>
+<a href="#146" id="146">146</a>
+<a href="#147" id="147">147</a>
+<a href="#148" id="148">148</a>
 </pre></div><pre class="rust"><code><span class="kw">use </span>std::sync::Mutex;
 <span class="kw">use </span>actix_web::{get, post, web, HttpResponse, Responder};
 <span class="kw">use </span>serde_json::json;
@@ -174,6 +183,7 @@
 /// GET: 0.0.0.0:7878/reqForm/path/11/abc
 /// 
 /// # return
+/// ```json
 /// {
 ///     &quot;info&quot;: {
 ///         &quot;A&quot;: 11,
@@ -181,6 +191,7 @@
 ///     },
 ///     &quot;status&quot;: &quot;ok&quot;
 /// }
+/// ```
 /// 
 /// # description
 /// 这里可以直接把路径输入解析到一个结构体里
@@ -197,13 +208,15 @@
 /// 
 /// # RestfulAPI
 /// GET: 0.0.0.0:7878/reqForm/json
-/// 
+/// ```json
 /// {
 ///     &quot;A&quot;: 11,
 ///     &quot;B&quot;:&quot;abc&quot;
 /// }
+/// ```
 /// 
 /// # return
+/// ```json
 /// {
 ///     &quot;info&quot;: {
 ///         &quot;A&quot;: 11,
@@ -211,6 +224,7 @@
 ///     },
 ///     &quot;status&quot;: &quot;ok&quot;
 /// }
+/// ```
 /// 
 /// # description
 /// 这里可以直接把json格式输入解析到一个结构体里
@@ -229,6 +243,7 @@
 /// GET: 0.0.0.0:7878/app/status
 /// 
 /// # return
+/// ```json
 /// {
 ///     &quot;app_status&quot;: {
 ///         &quot;app_counter&quot;: 4,
@@ -236,6 +251,7 @@
 ///     },
 ///     &quot;status&quot;: &quot;get status success&quot;
 /// }
+/// ```
 /// 
 /// # description
 /// 展示如何在json回复体中加入反序列化结构体
@@ -255,6 +271,7 @@
 /// POST: 0.0.0.0:7878/app/status
 /// 
 /// # return
+/// ```json
 /// {
 ///     &quot;app_status&quot;: {
 ///         &quot;app_counter&quot;: 4,
@@ -262,6 +279,7 @@
 ///     },
 ///     &quot;status&quot;: &quot;get status success&quot;
 /// }
+/// ```
 /// 
 /// # description
 /// 展示如何修改全局共享app状态；状态的注册是在main函数中；可变的成员需要用mutex
