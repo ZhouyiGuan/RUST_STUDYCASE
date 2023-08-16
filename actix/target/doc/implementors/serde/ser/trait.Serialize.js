@@ -1,3 +1,0 @@
-(function() {var implementors = {
-"actix":[["impl <a class=\"trait\" href=\"https://docs.rs/serde/1.0.183/serde/ser/trait.Serialize.html\" title=\"trait serde::ser::Serialize\">Serialize</a> for <a class=\"struct\" href=\"actix/router/struct.Info.html\" title=\"struct actix::router::Info\">Info</a>"],["impl <a class=\"trait\" href=\"https://docs.rs/serde/1.0.183/serde/ser/trait.Serialize.html\" title=\"trait serde::ser::Serialize\">Serialize</a> for <a class=\"struct\" href=\"actix/router/struct.AppStatus.html\" title=\"struct actix::router::AppStatus\">AppStatus</a>"]]
-};if (window.register_implementors) {window.register_implementors(implementors);} else {window.pending_implementors = implementors;}})()

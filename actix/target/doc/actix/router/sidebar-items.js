@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"fn":["get_appstatus","post_appstatus_counter","req_in_json","req_in_path"],"struct":["AppStatus","Info","reply_string"]};
